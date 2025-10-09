@@ -8,6 +8,8 @@ Este repositorio contiene la resolución de los ejercicios prácticos solicitado
 
 **Objetivo:** Evaluar el manejo de ramas, commits, merges y resolución de conflictos.
 
+<img width="1182" height="519" alt="image" src="https://github.com/user-attachments/assets/5a591a4c-29c0-4cde-bf71-4bc6f3a6ec8e" />
+
 **Pasos realizados:**
 
 1. Se creó un repositorio en GitHub y se subió el proyecto inicial con el nombre del autor.
@@ -49,6 +51,7 @@ Este repositorio contiene la resolución de los ejercicios prácticos solicitado
 ## Ejercicio 3: Contenerización con Docker y Docker Compose
 
 **Objetivo:** Contenerizar la aplicación Laravel + MySQL utilizando Docker y Docker Compose.
+
 <img width="1862" height="978" alt="image" src="https://github.com/user-attachments/assets/1aa5fb0f-6d6c-4c50-9e79-dc3536c25078" />
 
 **Acciones realizadas:**
