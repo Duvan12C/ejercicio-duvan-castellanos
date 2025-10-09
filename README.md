@@ -49,6 +49,7 @@ Este repositorio contiene la resolución de los ejercicios prácticos solicitado
 ## Ejercicio 3: Contenerización con Docker y Docker Compose
 
 **Objetivo:** Contenerizar la aplicación Laravel + MySQL utilizando Docker y Docker Compose.
+<img width="1862" height="978" alt="image" src="https://github.com/user-attachments/assets/1aa5fb0f-6d6c-4c50-9e79-dc3536c25078" />
 
 **Acciones realizadas:**
 
@@ -64,10 +65,10 @@ Este repositorio contiene la resolución de los ejercicios prácticos solicitado
 
 ## Estructura del repositorio
 
-/feature/primer-prueba → Ejercicio 1 (GitHub, ramas, merges)
-/feature/prueba2-php → Ejercicio 2 (API Laravel + MySQL)
-/feature/prueba3-docker → Ejercicio 3 (Docker + Docker Compose)
-laravel-api-collection/ → Colección de requests para Insomnia
+- `feature/primer-prueba` → Ejercicio 1 (GitHub, ramas, merges)
+- `feature/prueba2-php` → Ejercicio 2 (API Laravel + MySQL)
+- `feature/prueba3-docker` → Ejercicio 3 (Docker + Docker Compose)
+- `laravel-api-collection/` → Colección de requests para Insomnia
 
 ## Notas
 
