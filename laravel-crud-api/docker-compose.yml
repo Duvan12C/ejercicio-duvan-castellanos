@@ -1,0 +1,42 @@
+services:
+  # Servicio Laravel
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: laravel-app
+    restart: unless-stopped
+    ports:
+      - "8000:9000"
+    volumes:
+      - .:/var/www/html
+    environment:
+      DB_CONNECTION: mysql
+      DB_HOST: db
+      DB_PORT: 3306
+      DB_DATABASE: laravel_db
+      DB_USERNAME: laravel_user
+      DB_PASSWORD: laravel_pass
+    depends_on:
+      - db
+    command: >
+      sh -c "php artisan migrate --seed && php-fpm"
+
+  # Servicio MySQL
+  db:
+    image: mysql:8.0
+    container_name: mysql-db
+    restart: unless-stopped
+    ports:
+      - "3307:3306"   # Mapea el puerto MySQL
+    environment:
+      MYSQL_ROOT_PASSWORD: root_pass
+      MYSQL_DATABASE: laravel_db
+      MYSQL_USER: laravel_user
+      MYSQL_PASSWORD: laravel_pass
+    volumes:
+      - db_data:/var/lib/mysql  # Persistencia de datos
+
+# Volúmenes para MySQL
+volumes:
+  db_data:
