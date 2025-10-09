@@ -1,0 +1,146 @@
+type: collection.insomnia.rest/5.0
+name: Books
+meta:
+  id: wrk_09656fc8fac24536bef6e4afc07fee48
+  created: 1759989164825
+  modified: 1759989164825
+  description: ""
+collection:
+  - url: http://127.0.0.1:8000/api/listBooks
+    name: Lista
+    meta:
+      id: req_be05948824b64d6f81e4b103d9f0f4d7
+      created: 1759989170456
+      modified: 1759990001011
+      isPrivate: false
+      description: ""
+      sortKey: -1759989170456
+    method: GET
+    headers:
+      - name: User-Agent
+        value: insomnia/11.6.1
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://127.0.0.1:8000/api/addBook
+    name: Crear
+    meta:
+      id: req_a1d4e62563db48c395bfcc1adbb082d9
+      created: 1759989827487
+      modified: 1759990168008
+      isPrivate: false
+      description: ""
+      sortKey: -1759989827487
+    method: POST
+    body:
+      mimeType: application/json
+      text: |
+        {
+            "title": "Harry pother",
+            "author": "Desconocido",
+            "year_published": 1650
+        }
+    headers:
+      - name: Content-Type
+        value: application/json
+      - name: User-Agent
+        value: insomnia/11.6.1
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://127.0.0.1:8000/api/viewBook/1
+    name: Por_id
+    meta:
+      id: req_fcdd93ae335d47b186dc533fdbe7d86d
+      created: 1759989909174
+      modified: 1759989989634
+      isPrivate: false
+      description: ""
+      sortKey: -1759989909174
+    method: GET
+    headers:
+      - name: User-Agent
+        value: insomnia/11.6.1
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://127.0.0.1:8000/api/updateBook/1
+    name: Actualizar
+    meta:
+      id: req_c43ec4582b4544ee9116f0a80a8ed936
+      created: 1759989924645
+      modified: 1759989981867
+      isPrivate: false
+      description: ""
+      sortKey: -1759989924645
+    method: PUT
+    body:
+      mimeType: application/json
+      text: |
+        {
+            "title": "Cien Años de Soledad (Edición Especial)",
+            "author": "Gabriel García Márquez",
+            "year_published": 1967
+        }
+    headers:
+      - name: Content-Type
+        value: application/json
+      - name: User-Agent
+        value: insomnia/11.6.1
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://127.0.0.1:8000/api/deleteBook/3
+    name: Eliminar
+    meta:
+      id: req_db07bad3ebed45158261fc8221fad287
+      created: 1759990009345
+      modified: 1759990034975
+      isPrivate: false
+      description: ""
+      sortKey: -1759990009345
+    method: DELETE
+    headers:
+      - name: User-Agent
+        value: insomnia/11.6.1
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+cookieJar:
+  name: Default Jar
+  meta:
+    id: jar_a975cce341e853f952dd989e079c546fdd9a1b5a
+    created: 1759989164834
+    modified: 1759989164834
+environments:
+  name: Base Environment
+  meta:
+    id: env_a975cce341e853f952dd989e079c546fdd9a1b5a
+    created: 1759989164832
+    modified: 1759989164832
+    isPrivate: false
